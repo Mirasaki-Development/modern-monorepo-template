@@ -39,5 +39,10 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "pnpm": {
+    "overrides": {
+      "next@>=14.0.0 <14.2.10": ">=14.2.10"
+    }
   }
 }
