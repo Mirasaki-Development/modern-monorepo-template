@@ -5,6 +5,13 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "clean": "rimraf dist",
+    "clean:full": "rimraf dist .turbo node_modules"
+  },
+  "dependencies": {
+    "rimraf": "^6.0.1"
+  },
   "devDependencies": {
     "@swc/core": "^1.7.28",
     "@swc/jest": "^0.2.36",
