@@ -15,7 +15,7 @@
   "devDependencies": {
     "@swc/core": "^1.7.28",
     "@swc/jest": "^0.2.36",
-    "@types/node": "^20.11.24",
+    "@types/node": "^20.16.7",
     "jest-environment-jsdom": "^29.7.0"
   }
 }
