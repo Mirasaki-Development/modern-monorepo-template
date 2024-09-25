@@ -4,6 +4,7 @@
   "scripts": {
     "build": "turbo build",
     "checks": "turbo lint:fix && pnpm run format:fix && turbo typecheck",
+    "ci:cs": "pnpm changeset",
     "ci:publish": "pnpm publish -r",
     "ci:version": "pnpm changeset version",
     "clean": "turbo clean",
