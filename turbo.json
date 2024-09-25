@@ -1,0 +1,48 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "globalEnv": ["NODE_ENV"],
+  "globalDependencies": [
+    ".eslintrc.js",
+    ".eslintignore",
+    ".lintstagedrc.js",
+    ".prettierrc.yaml",
+    "tsconfig.json",
+    "base.json",
+    "nextjs.json",
+    "react-library.json"
+  ],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        ".dist/**",
+        "tsconfig.tsbuildinfo"
+      ]
+    },
+    "clean": {},
+    "clean:full": {},
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "format": {},
+    "format:fix": {},
+    "lint": {},
+    "lint:fix": {},
+    "start": {},
+    "test": {
+      "dependsOn": ["build"]
+    },
+    "typecheck": {
+      "outputs": ["tsconfig.tsbuildinfo"]
+    },
+    "typecheck:watch": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
