@@ -11,6 +11,7 @@ on:
 
 permissions:
   pull-requests: read
+  statuses: write # https://github.com/amannn/action-semantic-pull-request/issues/249#issuecomment-2019942359
 
 jobs:
   main:
